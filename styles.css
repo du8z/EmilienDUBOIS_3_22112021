@@ -1,21 +1,4 @@
-body {
-  margin: 0;
-}
-
-p, h2, h3, h4 {
-  font-family: Roboto;
-}
-
-h1 {
-  font-family: Shrikhand;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.flexcenter {
+.flexcenter, .header .header__size, .header .header__logo, .nav .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +33,20 @@ h1 {
           justify-content: space-between;
 }
 
-.flexstart {
+.nav .nav__margin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionfunctioning .btnfunctioning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,14 +58,33 @@ h1 {
           align-items: center;
 }
 
-.displaycolumn {
+body {
+  margin: 0;
+}
+
+p, h2, h3, h4 {
+  font-family: Roboto;
+}
+
+h1 {
+  font-family: Shrikhand;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flexstart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 p {
@@ -85,7 +100,7 @@ p {
 }
 
 .header .header__logo {
-  background: #FFF;
+  background: white;
 }
 
 .header .header__icone {
@@ -101,7 +116,7 @@ p {
   height: 60px;
   width: 250px;
   border-radius: 40px;
-  color: #FFF;
+  color: white;
   margin-top: 15px;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
@@ -117,10 +132,6 @@ p {
           align-items: center;
 }
 
-.nav .nav__nomargintext {
-  margin: 0;
-}
-
 .marginlefttext {
   margin-left: 20px;
 }
@@ -130,19 +141,19 @@ p {
 }
 
 .sectionfunctioning .btnfunctioning {
-  background-color: #f6f3f3;
+  background-color: #CCC;
   height: 90px;
-  width: 95%;
+  margin-right: 15px;
   border-radius: 25px;
   margin-top: 30px;
 }
 
-.sectionfunctioning .colorbtnnumber3 {
-  background-color: #ddcadf;
-}
-
 .sectionfunctioning .positioniconfunctioning {
   margin-left: 40px;
+}
+
+.sectionfunctioning .colorbtnnumber3 {
+  background-color: #ddcadf;
 }
 
 .sectionfunctioning .purplecircle {
@@ -155,7 +166,7 @@ p {
   color: white;
 }
 
-.sectionfunctioning .iconcolor {
+.sectionfunctioning .purplecircle .iconcolor {
   color: #757272;
 }
 
@@ -164,13 +175,13 @@ p {
 }
 
 .boxshadow {
-  -webkit-box-shadow: 0 3px 8px 1px #c5c4c4;
-          box-shadow: 0 3px 8px 1px #c5c4c4;
+  -webkit-box-shadow: 0 3px 8px 1px #757272;
+          box-shadow: 0 3px 8px 1px #757272;
 }
 
 .sectionrestaurants {
   margin-top: 80px;
-  background-color: #f6f3f3;
+  background-color: #CCC;
   width: 100%;
   position: absolute;
 }
@@ -180,7 +191,7 @@ p {
   position: relative;
 }
 
-.sectionrestaurants .articlesectionrestaurants {
+.articlesectionrestaurants {
   margin-top: 30px;
   margin-right: 20px;
   height: 375px;
@@ -188,7 +199,21 @@ p {
   border-radius: 25px;
 }
 
-.sectionrestaurants .picturesrestaurants {
+.articlesectionrestaurants .margintextarticlerestaurant {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.articlesectionrestaurants .marginiconarticlerestaurant {
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.articlesectionrestaurants .marginparagraphearticlerestaurant {
+  margin-top: 5px;
+}
+
+.picturesrestaurants {
   background-size: cover;
   background-position: 50% 60%;
   width: 100%;
@@ -196,34 +221,20 @@ p {
   border-radius: 25px 25px 0 0;
 }
 
-.sectionrestaurants .firstpicturerestaurants {
+.firstpicturerestaurants {
   background-image: url(./img/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
-.sectionrestaurants .secondtpicturerestaurants {
+.secondtpicturerestaurants {
   background-image: url(./img/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
 
-.sectionrestaurants .thirdtpicturerestaurants {
+.thirdtpicturerestaurants {
   background-image: url(./img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
-.sectionrestaurants .fourthpicturerestaurants {
+.fourthpicturerestaurants {
   background-image: url(./img/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-
-.sectionrestaurants .margintextarticlerestaurant {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.sectionrestaurants .marginiconarticlerestaurant {
-  margin-right: 40px;
-  margin-top: 15px;
-}
-
-.sectionrestaurants .marginparagraphearticlerestaurant {
-  margin-top: 5px;
 }
 
 .textx_large {
