@@ -1,4 +1,4 @@
-.flexcenter, .header .header__size, .header .header__logo, .nav .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle {
+.flexcenter, .header .header__size, .header .header__logo, .nav .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle, .newrestaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,13 +46,25 @@
           align-items: center;
 }
 
-.sectionfunctioning .btnfunctioning {
+.flexstart, .sectionfunctioning .btnfunctioning, .textfooter, .iconfooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.positionnew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -73,18 +85,6 @@ h1 {
 * {
   margin: 0;
   padding: 0;
-}
-
-.flexstart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 p {
@@ -126,6 +126,8 @@ p {
   margin-left: 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
+  -webkit-box-shadow: 0 3px 8px 1px #CCC;
+          box-shadow: 0 3px 8px 1px #CCC;
 }
 
 .nav .nav__margin {
@@ -156,7 +158,7 @@ p {
 }
 
 .sectionfunctioning .btnfunctioning {
-  background-color: #CCC;
+  background-color: #f6f3f3;
   height: 90px;
   margin-right: 15px;
   border-radius: 25px;
@@ -165,6 +167,8 @@ p {
   margin-right: 20px;
   margin-bottom: 0;
   margin-left: 20px;
+  -webkit-box-shadow: 0 3px 8px 1px #CCC;
+          box-shadow: 0 3px 8px 1px #CCC;
 }
 
 .sectionfunctioning .positioniconfunctioning {
@@ -196,18 +200,14 @@ p {
   color: #9356DC;
 }
 
-.boxshadow {
-  -webkit-box-shadow: 0 3px 8px 1px #757272;
-          box-shadow: 0 3px 8px 1px #757272;
-}
-
 .sectionrestaurants {
   margin-top: 80px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  background-color: #CCC;
+  background-color: #f6f3f3;
   width: 100%;
+  height: 1800px;
   position: absolute;
 }
 
@@ -227,6 +227,8 @@ p {
   height: 375px;
   background-color: white;
   border-radius: 25px;
+  -webkit-box-shadow: 0 3px 8px 1px #CCC;
+          box-shadow: 0 3px 8px 1px #CCC;
 }
 
 .articlesectionrestaurants .margintextarticlerestaurant {
@@ -246,6 +248,18 @@ p {
 .articlesectionrestaurants .marginparagraphearticlerestaurant {
   margin-top: 5px;
   margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.newrestaurant {
+  height: 40px;
+  width: 100px;
+  background-color: #99E2D0;
+  color: #00805a;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
   margin-bottom: 0;
   margin-left: 0;
 }
@@ -276,5 +290,38 @@ p {
 
 .textx_large {
   font-size: x-large;
+}
+
+.footer {
+  margin-top: 1870px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  background-color: #474646;
+  color: white;
+}
+
+.footer .titlefooter {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.textfooter {
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.iconfooter {
+  margin-top: 0;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 /*# sourceMappingURL=styles.css.map */
