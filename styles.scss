@@ -44,7 +44,7 @@ p{
     }
     .header__icone{ 
           
-        margin-right: 15px;
+        @include margin (0, 15px, 0, 0)
     }
 
 } 
@@ -56,13 +56,13 @@ p{
         width: 250px;
         border-radius: 40px;
         color: $back-white;
-        margin-top: 15px;
+        @include margin (15px, 0, 0, 0);
         background: linear-gradient(to bottom right, $secondary ,$primary);
         @extend %flex-center;
         
     }
-    .nav__margin{
-        margin-top: 30px;
+    .nav__margin{   
+        @include margin(30px, 0, 0, 0);
         @extend %display-column;
     }
     .nav__aligntext{
@@ -72,10 +72,10 @@ p{
     
 }
 .marginlefttext{
-    margin-left: 20px;
+    @include margin(0, 0, 0, 20px)
 }
 .sectionfunctioning{
-    margin-top: 50px;
+    @include margin(50px, 0, 0, 0);
     .btnfunctioning{
         background-color: $grey;
         height: 90px;
@@ -83,12 +83,13 @@ p{
         border-radius: 25px;
         margin-top: 30px;
         @extend %flex-center;
-        @extend %flex-start;       
+        @extend %flex-start;
+        @include margin(30px, 20px, 0, 20px);       
     }
     
     .positioniconfunctioning{
         @extend %flex-center;
-        margin-left: 40px;
+        @include margin(0, 0, 0, 40px);
 
     }
 .colorbtnnumber3{
@@ -103,6 +104,8 @@ p{
         margin-left: -12px;
         color: $back-white;
         @extend %flex-center;
+       //@include margin(0, 0, 0, -12px);
+    }
         
     
         
@@ -114,39 +117,34 @@ p{
         color: $primary;
 }
     
-    
-}
 .boxshadow{
     box-shadow: 0 3px 8px 1px $dark-grey;
 }
 .sectionrestaurants{
-    margin-top: 80px;
+    @include margin(80px, 0, 0, 0);
     background-color: $grey;
     width: 100%;
     position: absolute;
     .titlerestaurants{
-        margin-top: 50px;   
+        @include margin(50px, 0, 0, 20px);   
         position: relative;
     }
     
 }
 .articlesectionrestaurants{
-    margin-top: 30px;
-    margin-right: 20px;
+    @include margin(30px, 20px, 0, 20px);
     height: 375px;
-    background-color: $back-white;
+    background-color: $txt-font-sombre;
     border-radius: 25px;
     
     .margintextarticlerestaurant{
-    margin-left: 20px;
-    margin-top: 20px;
+    @include margin(20px, 0, 0, 20px);
     }
     .marginiconarticlerestaurant{
-    margin-right: 40px;
-    margin-top: 15px;
+    @include margin(15px, 40px, 0, 0);
     }
     .marginparagraphearticlerestaurant{
-    margin-top: 5px;
+    @include margin(5px, 0, 0, 0);
     }
 
 }

@@ -104,7 +104,10 @@ p {
 }
 
 .header .header__icone {
+  margin-top: 0;
   margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .nav {
@@ -118,12 +121,18 @@ p {
   border-radius: 40px;
   color: white;
   margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
 }
 
 .nav .nav__margin {
   margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .nav .nav__aligntext {
@@ -133,11 +142,17 @@ p {
 }
 
 .marginlefttext {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-left: 20px;
 }
 
 .sectionfunctioning {
   margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .sectionfunctioning .btnfunctioning {
@@ -146,9 +161,16 @@ p {
   margin-right: 15px;
   border-radius: 25px;
   margin-top: 30px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
 }
 
 .sectionfunctioning .positioniconfunctioning {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-left: 40px;
 }
 
@@ -166,11 +188,11 @@ p {
   color: white;
 }
 
-.sectionfunctioning .purplecircle .iconcolor {
+.sectionfunctioning .iconcolor {
   color: #757272;
 }
 
-.sectionfunctioning .iconshopcolor {
+.iconshopcolor {
   color: #9356DC;
 }
 
@@ -181,6 +203,9 @@ p {
 
 .sectionrestaurants {
   margin-top: 80px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   background-color: #CCC;
   width: 100%;
   position: absolute;
@@ -188,29 +213,41 @@ p {
 
 .sectionrestaurants .titlerestaurants {
   margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
   position: relative;
 }
 
 .articlesectionrestaurants {
   margin-top: 30px;
   margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
   height: 375px;
   background-color: white;
   border-radius: 25px;
 }
 
 .articlesectionrestaurants .margintextarticlerestaurant {
-  margin-left: 20px;
   margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
 }
 
 .articlesectionrestaurants .marginiconarticlerestaurant {
-  margin-right: 40px;
   margin-top: 15px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .articlesectionrestaurants .marginparagraphearticlerestaurant {
   margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .picturesrestaurants {
