@@ -146,6 +146,26 @@ p{
     }
 
 }
+
+.test1{
+    visibility: visible;
+    color: $back-black;
+    @include margin(0, -35px, 0, 0);
+}
+.test1:hover{
+    color: $back-white;
+}
+.test2{
+    visibility: hidden;
+    font-size: 150px;
+    color: $primary;
+    
+}
+.test2:hover{
+    visibility: visible;
+    color: $primary;
+    position: absolute;
+}
 .newrestaurant{
     height: 40px;
     width: 100px;
@@ -167,7 +187,7 @@ p{
     width: 100%;
     height: 270px;
     border-radius: 25px 25px 0 0;
-    }
+}
 .firstpicturerestaurants{
     background-image: url(./img/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }

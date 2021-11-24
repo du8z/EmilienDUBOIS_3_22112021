@@ -252,6 +252,31 @@ p {
   margin-left: 0;
 }
 
+.test1 {
+  visibility: visible;
+  color: #474646;
+  margin-top: 0;
+  margin-right: -35px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.test1:hover {
+  color: white;
+}
+
+.test2 {
+  visibility: hidden;
+  font-size: 150px;
+  color: #9356DC;
+}
+
+.test2:hover {
+  visibility: visible;
+  color: #9356DC;
+  position: absolute;
+}
+
 .newrestaurant {
   height: 40px;
   width: 100px;
