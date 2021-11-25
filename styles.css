@@ -46,7 +46,7 @@
           align-items: center;
 }
 
-.flexstart, .arrow, .sectionfunctioning .btnfunctioning, .textfooter, .iconfooter {
+.flexstart, .arrow, .textfooter, .iconfooter, .sectionfunctioning .btnfunctioning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +94,10 @@ a {
 
 p {
   font-size: large;
+}
+
+.textx_large {
+  font-size: x-large;
 }
 
 .header {
@@ -163,11 +167,37 @@ p {
           align-items: center;
 }
 
-.marginlefttext {
-  margin-top: 0;
+.footer {
+  margin-top: 1870px;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 0;
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  background-color: #474646;
+  color: white;
+}
+
+.footer .titlefooter {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.textfooter {
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.iconfooter {
+  margin-top: 0;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .sectionfunctioning {
@@ -214,6 +244,13 @@ p {
 
 .sectionfunctioning .iconcolor {
   color: #757272;
+}
+
+.marginlefttext {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
 }
 
 .iconshopcolor {
@@ -272,43 +309,6 @@ p {
   margin-left: 0;
 }
 
-.test1 {
-  visibility: visible;
-  color: #474646;
-  margin-top: 0;
-  margin-right: -35px;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.test1:hover {
-  color: white;
-}
-
-.test2 {
-  visibility: hidden;
-  font-size: 150px;
-  color: #9356DC;
-}
-
-.test2:hover {
-  visibility: visible;
-  color: #9356DC;
-  position: absolute;
-}
-
-.newrestaurant {
-  height: 40px;
-  width: 100px;
-  background-color: #99E2D0;
-  color: #00805a;
-  position: relative;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
 .picturesrestaurants {
   background-size: cover;
   background-position: 50% 60%;
@@ -333,39 +333,14 @@ p {
   background-image: url(./img/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
-.textx_large {
-  font-size: x-large;
-}
-
-.footer {
-  margin-top: 1870px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  height: 280px;
-  width: 100%;
-  position: absolute;
-  background-color: #474646;
-  color: white;
-}
-
-.footer .titlefooter {
-  margin-top: 30px;
-  margin-right: 0;
-  margin-bottom: 30px;
-  margin-left: 30px;
-}
-
-.textfooter {
-  margin-top: 10px;
-  margin-right: 0;
-  margin-bottom: 5px;
-  margin-left: 30px;
-}
-
-.iconfooter {
-  margin-top: 0;
-  margin-right: 15px;
+.newrestaurant {
+  height: 40px;
+  width: 100px;
+  background-color: #99E2D0;
+  color: #00805a;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
   margin-bottom: 0;
   margin-left: 0;
 }
@@ -448,5 +423,30 @@ p {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+}
+
+.test1 {
+  visibility: visible;
+  color: #474646;
+  margin-top: 0;
+  margin-right: -35px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.test1:hover {
+  color: white;
+}
+
+.test2 {
+  visibility: hidden;
+  font-size: 150px;
+  color: #9356DC;
+}
+
+.test2:hover {
+  visibility: visible;
+  color: #9356DC;
+  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */

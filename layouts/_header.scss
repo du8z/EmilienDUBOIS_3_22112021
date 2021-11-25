@@ -1,0 +1,26 @@
+.header{        
+    background: $grey;
+      
+    .header__size{
+        @extend %flex-center;   
+        height: 70px;
+    }    
+    .header__logo{
+        @extend %flex-center;
+        background: $back-white;
+        width: 100%;
+    }
+    .header__icone{ 
+          
+        @include margin (0, 15px, 0, 0);
+        
+    }
+
+}
+.margin_logo{
+    @include margin(-25px, 0, 25px, 0);
+}
+.arrow{
+    @extend %flex-start;
+    @include margin (40px, 0, 0, 40px);
+}

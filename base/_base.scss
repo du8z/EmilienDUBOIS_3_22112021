@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+p, h2, h3, h4{
+    font-family: Roboto;
+}
+h1{
+    font-family: Shrikhand;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-size: large;
+}
+.textx_large{
+    font-size: x-large;
+}
+.flexcenter{
+    @extend %flex-center;
+}
+.flexaround{
+    @extend %flex-around;
+}
+.flexbetween{
+    @extend %flex-between;
+}
+.flexstart{
+    @extend %flex-start;
+}

@@ -1,0 +1,19 @@
+.test1{
+    visibility: visible;
+    color: $back-black;
+    @include margin(0, -35px, 0, 0);
+}
+.test1:hover{
+    color: $back-white;
+}
+.test2{
+    visibility: hidden;
+    font-size: 150px;
+    color: $primary;
+    
+}
+.test2:hover{
+    visibility: visible;
+    color: $primary;
+    position: absolute;
+}
