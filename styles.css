@@ -1,4 +1,4 @@
-.flexcenter, .header .header__size, .header .header__logo, .nav .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle, .newrestaurant {
+.flexcenter, .header .header__size, .header .header__logo, .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle, .newrestaurant, .btnplacement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +139,20 @@ p {
   height: 350px;
 }
 
-.nav .btn__nav {
+.nav .nav__margin {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.nav .nav__aligntext {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__nav {
   height: 60px;
   width: 250px;
   border-radius: 40px;
@@ -152,19 +165,6 @@ p {
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
   -webkit-box-shadow: 0 3px 8px 1px #CCC;
           box-shadow: 0 3px 8px 1px #CCC;
-}
-
-.nav .nav__margin {
-  margin-top: 30px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.nav .nav__aligntext {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer {
@@ -200,11 +200,19 @@ p {
   margin-left: 0;
 }
 
-.sectionfunctioning {
-  margin-top: 50px;
+.footerrestaurants {
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  background-color: #474646;
+  color: white;
+}
+
+.footerrestaurants .titlefooter {
+  margin-top: 30px;
   margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .sectionfunctioning .btnfunctioning {
@@ -247,7 +255,7 @@ p {
 }
 
 .marginlefttext {
-  margin-top: 0;
+  margin-top: 50px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 20px;
@@ -351,13 +359,24 @@ p {
   height: 500px;
 }
 
-.alafrancaise {
+.picturepagerestaurant1 {
+  background-image: url(../img/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.picturepagerestaurant2 {
+  background-image: url(../img/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.picturepagerestaurant3 {
   background-image: url(./img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.picturepagerestaurant4 {
+  background-image: url(../img/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
 .sectionpagerestaurants {
   width: 100%;
-  height: 1500px;
   background-color: #f6f3f3;
   border-radius: 100px 100px 0 0;
   margin-top: -100px;
@@ -403,7 +422,6 @@ p {
 
 .boxsectionrestaurants {
   background-color: white;
-  height: 100px;
   width: 90%;
   border-radius: 25px;
   margin-top: 30px;
@@ -414,14 +432,32 @@ p {
           box-shadow: 0 3px 8px 1px #CCC;
 }
 
+.boxsectionrestaurants .textboxspan {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
 .boxsectionrestaurants .textbox {
   margin-top: 0;
   margin-right: 20px;
   margin-bottom: 0;
   margin-left: 20px;
-  padding-top: 15px;
+  padding-top: 3px;
   padding-right: 0;
-  padding-bottom: 0;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
+.btnplacement {
+  padding-top: 70px;
+  padding-right: 0;
+  padding-bottom: 90px;
   padding-left: 0;
 }
 

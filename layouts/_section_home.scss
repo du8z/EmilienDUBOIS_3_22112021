@@ -1,5 +1,4 @@
 .sectionfunctioning{
-    @include margin(50px, 0, 0, 0);
     .btnfunctioning{
         background-color: $neutral-grey;
         height: 90px;
@@ -40,7 +39,7 @@
     }
 }  
 .marginlefttext{
-    @include margin(0, 0, 0, 20px)
+    @include margin(50px, 0, 0, 20px)
 }
 .iconshopcolor{
         color: $primary;
