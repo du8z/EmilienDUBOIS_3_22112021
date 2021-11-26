@@ -1,0 +1,41 @@
+@keyframes appearance{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.app1{
+    animation-delay: 0;
+}
+.app2{
+    animation-delay: .5s;
+    
+}
+.app3{
+    animation-delay: 1s;
+}
+.app4{
+    animation-delay: 1.5s;
+}
+.app5{
+    animation-delay: 2s;
+}
+.app6{
+    animation-delay: 2.5s;
+}
+.app7{
+    animation-delay: 3s;
+}
+.app8{
+    animation-delay: 3.5s;
+}
+.app9{
+    animation-delay: 4s;
+}
+.app10{
+    animation-delay: 4.5s;
+}

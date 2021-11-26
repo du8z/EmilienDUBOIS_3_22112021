@@ -80,6 +80,7 @@ p, h2, h3, h4 {
 
 h1 {
   font-family: Shrikhand;
+  letter-spacing: 1px;
 }
 
 * {
@@ -165,6 +166,7 @@ p {
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
   -webkit-box-shadow: 0 3px 8px 1px #CCC;
           box-shadow: 0 3px 8px 1px #CCC;
+  cursor: pointer;
 }
 
 .footer {
@@ -430,6 +432,13 @@ p {
   margin-left: 30px;
   -webkit-box-shadow: 0 3px 8px 1px #CCC;
           box-shadow: 0 3px 8px 1px #CCC;
+  opacity: 0;
+  -webkit-animation-name: appearance;
+          animation-name: appearance;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .boxsectionrestaurants .textboxspan {
@@ -484,5 +493,81 @@ p {
   visibility: visible;
   color: #9356DC;
   position: absolute;
+}
+
+@-webkit-keyframes appearance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.app1 {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.app2 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.app3 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.app4 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.app5 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.app6 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.app7 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.app8 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.app9 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.app10 {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 /*# sourceMappingURL=styles.css.map */
