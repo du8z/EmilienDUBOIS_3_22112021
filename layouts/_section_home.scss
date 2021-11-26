@@ -8,7 +8,10 @@
         @extend %flex-center;
         @extend %flex-start;
         @include margin(30px, 20px, 0, 20px);
-        @include box-shadow($grey)       
+        @include box-shadow($grey);
+        &:hover{
+            background-color: $salmon-grey;
+        }      
     }
     
     .positioniconfunctioning{
@@ -17,9 +20,7 @@
 
     }
 
-.colorbtnnumber3{
-        background-color: $salmon-grey;
-    }
+}
 .purplecircle{
         height: 25px;
         width: 25px;
@@ -36,14 +37,15 @@
         
     .iconcolor{
           color: $dark-grey;
+          &:hover{
+              color: $primary;
+          }
     }
-}  
+ 
 .marginlefttext{
     @include margin(50px, 0, 0, 20px)
 }
-.iconshopcolor{
-        color: $primary;
-}
+
 .sectionrestaurants{
     @include margin(80px, 0, 0, 0);
     background-color: $neutral-grey;

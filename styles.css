@@ -1,4 +1,4 @@
-.flexcenter, .header .header__size, .header .header__logo, .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .sectionfunctioning .purplecircle, .newrestaurant, .btnplacement {
+.flexcenter, .header .header__size, .header .header__logo, .btn__nav, .sectionfunctioning .btnfunctioning, .sectionfunctioning .positioniconfunctioning, .purplecircle, .newrestaurant, .btnplacement, .boxsectionrestaurants::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +231,10 @@ p {
           box-shadow: 0 3px 8px 1px #CCC;
 }
 
+.sectionfunctioning .btnfunctioning:hover {
+  background-color: #efe6f0;
+}
+
 .sectionfunctioning .positioniconfunctioning {
   margin-top: 0;
   margin-right: 0;
@@ -238,11 +242,7 @@ p {
   margin-left: 40px;
 }
 
-.sectionfunctioning .colorbtnnumber3 {
-  background-color: #ddcadf;
-}
-
-.sectionfunctioning .purplecircle {
+.purplecircle {
   height: 25px;
   width: 25px;
   border-radius: 25px;
@@ -252,8 +252,12 @@ p {
   color: white;
 }
 
-.sectionfunctioning .iconcolor {
+.iconcolor {
   color: #757272;
+}
+
+.iconcolor:hover {
+  color: #9356DC;
 }
 
 .marginlefttext {
@@ -261,10 +265,6 @@ p {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 20px;
-}
-
-.iconshopcolor {
-  color: #9356DC;
 }
 
 .sectionrestaurants {
@@ -435,10 +435,11 @@ p {
   opacity: 0;
   -webkit-animation-name: appearance;
           animation-name: appearance;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  cursor: pointer;
 }
 
 .boxsectionrestaurants .textboxspan {
@@ -527,47 +528,91 @@ p {
 }
 
 .app2 {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .app3 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 .app4 {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+.app5 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.app6 {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-.app5 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.app6 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-}
-
 .app7 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .app8 {
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 
 .app9 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 .app10 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+@-webkit-keyframes con {
+  from {
+    -webkit-transition: translateX(-200px);
+    transition: translateX(-200px);
+  }
+  to {
+    -webkit-transition: translateX(0px);
+    transition: translateX(0px);
+  }
+}
+
+@keyframes con {
+  from {
+    -webkit-transition: translateX(-200px);
+    transition: translateX(-200px);
+  }
+  to {
+    -webkit-transition: translateX(0px);
+    transition: translateX(0px);
+  }
+}
+
+.boxsectionrestaurants::before {
+  background-color: #99E2D0;
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 0%;
+  width: 100px;
+  height: 79px;
+  border-radius: 0 25px 25px 0;
+  opacity: 0;
+}
+
+.boxsectionrestaurants:hover::before {
+  opacity: 1;
+  -webkit-animation-name: con;
+          animation-name: con;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 /*# sourceMappingURL=styles.css.map */

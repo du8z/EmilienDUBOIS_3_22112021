@@ -1,0 +1,32 @@
+
+@keyframes con{
+    from{
+        transition: translateX(-200px);
+    }
+    to{
+        transition: translateX(0px);
+    }
+}
+.boxsectionrestaurants::before{
+    background-color:$tertiary;
+    content: "";
+    position: absolute;
+    left: 90%;
+    top: 0%;
+    width:100px;
+    height: 79px;
+    @extend %flex-center;
+    border-radius: 0 25px 25px 0;
+    opacity: 0;
+    
+}
+.boxsectionrestaurants:hover::before{
+    opacity: 1;
+    animation-name: con;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+}
+
+
+
+
