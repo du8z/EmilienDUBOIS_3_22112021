@@ -34,3 +34,6 @@ p{
 .flexstart{
     @extend %flex-start;
 }
+.flex{
+    display: flex;
+}

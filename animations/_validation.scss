@@ -1,31 +1,56 @@
 
-@keyframes con{
+@keyframes ready{
     from{
-        transition: translateX(-200px);
+        width: 0%;
+    }
+ 
+    to{
+        width: 18%;
+    }
+}
+@keyframes ready_reverse{
+    from{
+        width:18%
+
     }
     to{
-        transition: translateX(0px);
+        width: 0%;
     }
 }
-.boxsectionrestaurants::before{
-    background-color:$tertiary;
-    content: "";
-    position: absolute;
-    left: 90%;
-    top: 0%;
-    width:100px;
-    height: 79px;
-    @extend %flex-center;
-    border-radius: 0 25px 25px 0;
-    opacity: 0;
+
+@keyframes icon_yes {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
     
 }
-.boxsectionrestaurants:hover::before{
-    opacity: 1;
-    animation-name: con;
-    animation-duration: 10s;
-    animation-fill-mode: both;
+
+.fa-check-circle{
+    font-size: 0px;
 }
+
+@keyframes rota{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+        
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
