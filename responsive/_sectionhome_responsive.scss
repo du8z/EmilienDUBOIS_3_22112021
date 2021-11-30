@@ -1,4 +1,40 @@
-.sectionfunctioning{
+@media screen and (min-width:800px){
+        
+    
+    .sectionfunctioning .btnfunctioning{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .sectionfunctioning .positioniconfunctioning{
+        margin: 0;
+    }
+    .articlesectionfunctioning{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .purplecircle{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: $primary;
+        position: relative;
+        margin-left: 0;
+        color: $back-white;
+        margin-top: -50px;
+    }
+    
+}
+
+
+
+/*.sectionfunctioning{
     .btnfunctioning{
         background-color: $neutral-grey;
         height: 90px;
@@ -106,3 +142,4 @@
 .positionnew{
     @extend %flex-end;    
 }
+*/
