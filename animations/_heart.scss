@@ -1,19 +1,19 @@
-.test1{
-    visibility: visible;
-    color: $back-black;
-    @include margin(0, -35px, 0, 0);
-}
-.test1:hover{
-    color: $back-white;
-}
-.test2{
-    visibility: hidden;
-    font-size: 150px;
-    color: $primary;
+
+.fa-heart {
+    color: black;
+    cursor: pointer;
+    &:hover {
+      animation: backwards 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to top, $secondary ,$primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+    }
     
 }
-.test2:hover{
-    visibility: visible;
-    color: $primary;
-    position: absolute;
-}
+
+
+
+

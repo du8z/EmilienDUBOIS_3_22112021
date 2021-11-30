@@ -519,29 +519,21 @@ p {
           animation-duration: .4s;
 }
 
-.test1 {
-  visibility: visible;
-  color: #474646;
-  margin-top: 0;
-  margin-right: -35px;
-  margin-bottom: 0;
-  margin-left: 0;
+.fa-heart {
+  color: black;
+  cursor: pointer;
 }
 
-.test1:hover {
-  color: white;
-}
-
-.test2 {
-  visibility: hidden;
-  font-size: 150px;
-  color: #9356DC;
-}
-
-.test2:hover {
-  visibility: visible;
-  color: #9356DC;
-  position: absolute;
+.fa-heart:hover {
+  -webkit-animation: backwards 0.3s ease-in-out;
+          animation: backwards 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79DA), to(#9356DC));
+  background: linear-gradient(to top, #ff79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 @-webkit-keyframes appearance {
