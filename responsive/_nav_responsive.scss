@@ -1,0 +1,23 @@
+@media screen and (min-width:800px){
+
+}
+@media screen and (min-width:1050px){
+    .nav{
+        height: auto;
+    }
+    .btn__nav{
+        height: 90px;
+        width: 400px;
+        border-radius: 50px;
+        display: none
+        
+        
+    }
+    .nav__margin{
+        @include padding (40px, 0, 40px, 0);
+    }
+    h2{
+        font-size: 30px;
+    }
+    
+}

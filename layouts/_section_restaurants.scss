@@ -41,7 +41,7 @@
     @include margin (40px, 0, 20px, 40px);
 }
 .deletedifferenceheight{
-    @include margin (-10px, 0, 0, 0);
+    @include margin (-12px, 0, 0, 0);
 }
 .boxsectionrestaurants{
     width: 90%;
@@ -63,6 +63,18 @@
         @include margin (0, 20px, 0, 20px);
         @include padding(3px, 0, 15px, 0);
     }
+}
+
+.boxsectionrestaurants_alone{
+    width: 90%;
+    border-radius: 25px ;
+    @include margin(30px, 30px, 0 ,30px);
+    @include box-shadow($grey);
+    opacity: 0;
+    animation-name: appearance;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    cursor: pointer;
 }
 .btnplacement{
     @extend %flex-center;
@@ -93,7 +105,7 @@
         border-radius: 25px 0 0 25px;
     } 
     .fa-check-circle{
-        font-size: 40px;
+        font-size: 30px;
         color: $back-white;
         animation-name: rota;
         animation-duration: .4s;

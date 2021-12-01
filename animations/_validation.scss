@@ -8,6 +8,15 @@
         width: 18%; 
     }
 }
+@keyframes ready_responsive{
+    from{
+        width: 0%;
+    }
+ 
+    to{
+        width: 30%; 
+    }
+}
 @keyframes ready_reverse{
     from{
         width:18% 

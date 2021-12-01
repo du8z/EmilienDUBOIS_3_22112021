@@ -11,7 +11,10 @@
         @include box-shadow($grey);
         &:hover{
             background-color: $salmon-grey;
-        }      
+        } 
+        &:hover .iconcolor{
+            color: $primary;
+        }     
     }
     
     .positioniconfunctioning{
@@ -36,9 +39,8 @@
         
     .iconcolor{
           color: $dark-grey;
-          &:hover{
-              color: $primary;
-          }
+          font-size: 1.5em;
+          
     }
  
 .marginlefttext{

@@ -1,0 +1,23 @@
+@media screen and (min-width:1050px){
+    .header{
+        background-color: $back-white;
+        .header__logo{
+            width: auto;
+        }
+        .header__size{
+            @include margin(20px, 40px, 20px, 40px);
+        }
+        .header__icone{
+            display: none;
+        }
+    }
+    .headerdisplay{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    
+    
+}

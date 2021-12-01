@@ -1,0 +1,36 @@
+@media screen and (min-width:1050px){
+    .deletedifferenceheight{
+        @include margin (-3px, 0, 0, 0);
+    }
+    .display_responsive{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .underapp{
+        justify-content: start;
+        width: 34%;
+    }
+    
+    .boxsectionrestaurants{
+        height: 125px;
+        .textboxspan{
+            @include padding(20px, 0, 0, 0);
+        }
+    }
+    
+    .boxclassic{
+        height: 125px;
+    }
+    .boxsectionrestaurants:hover{
+        .boxicon{
+        animation-name: ready_responsive;
+        animation-duration: .4s;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+        }
+    }
+    
+   
+}
