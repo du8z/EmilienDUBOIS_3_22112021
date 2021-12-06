@@ -7,9 +7,7 @@
         .header__size{
             @include margin(20px, 40px, 20px, 40px);
         }
-        .header__icone{
-            display: none;
-        }
+        
     }
     .headerdisplay{
         display: flex;

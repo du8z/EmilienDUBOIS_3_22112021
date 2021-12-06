@@ -53,29 +53,24 @@
     animation-duration: 2s;
     animation-fill-mode: both;
     cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     
 
     .textboxspan{
         @include margin (0, 20px, 0, 20px);
         @include padding(10px, 0, 0, 0);
+       
     }
     .textbox{
         @include margin (0, 20px, 0, 20px);
         @include padding(3px, 0, 15px, 0);
+        text-overflow: ellipsis
     }
 }
 
-.boxsectionrestaurants_alone{
-    width: 90%;
-    border-radius: 25px ;
-    @include margin(30px, 30px, 0 ,30px);
-    @include box-shadow($grey);
-    opacity: 0;
-    animation-name: appearance;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    cursor: pointer;
-}
+
 .btnplacement{
     @extend %flex-center;
     @include padding (70px, 0, 90px, 0);
@@ -84,6 +79,9 @@
     background-color: $back-white;
     width: 100%;
     border-radius: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .boxicon{
     background-color: $tertiary;
@@ -93,6 +91,7 @@
     animation-name: ready_reverse;
     animation-duration: .2s;
     animation-fill-mode: both;
+    
 }
 .boxsectionrestaurants:hover{
     .boxicon{
@@ -100,9 +99,12 @@
     animation-duration: .4s;
     animation-delay: 0s;
     animation-fill-mode: both;
+    
     }
     .boxclassic{
         border-radius: 25px 0 0 25px;
+        
+        
     } 
     .fa-check-circle{
         font-size: 30px;
@@ -113,7 +115,11 @@
     }
 }
 
-
+.oui{
+    text-overflow: ellipsis;
+    
+    
+}
 
 
 

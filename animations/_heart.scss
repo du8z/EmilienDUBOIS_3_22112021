@@ -10,10 +10,20 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
       font-weight: bold;
+      animation: 2s botttt  forwards;
     }
     
 }
-
-
+@keyframes botttt {
+  from{
+    opacity: 0.1;
+      
+  }
+  
+ to{
+    opacity: 1;
+    
+  }
+}
 
 
