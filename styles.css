@@ -438,7 +438,6 @@ p {
   margin-left: 30px;
   -webkit-box-shadow: 0 3px 8px 1px #CCC;
           box-shadow: 0 3px 8px 1px #CCC;
-  opacity: 0;
   -webkit-animation-name: appearance;
           animation-name: appearance;
   -webkit-animation-duration: 2s;
@@ -446,12 +445,34 @@ p {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.boxsectionrestaurants .textboxspan {
+.boxsectionrestaurants:hover .boxover {
+  width: calc(100%);
+}
+
+.boxsectionrestaurants:hover .textbox {
+  width: 325px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-top: 3px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
+.boxover {
+  max-width: 500px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.textboxspan {
   margin-top: 0;
   margin-right: 20px;
   margin-bottom: 0;
@@ -462,7 +483,7 @@ p {
   padding-left: 0;
 }
 
-.boxsectionrestaurants .textbox {
+.textbox {
   margin-top: 0;
   margin-right: 20px;
   margin-bottom: 0;
@@ -471,7 +492,18 @@ p {
   padding-right: 0;
   padding-bottom: 15px;
   padding-left: 0;
-  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+.textboxprice {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
 }
 
 .btnplacement {
@@ -485,9 +517,6 @@ p {
   background-color: white;
   width: 100%;
   border-radius: 25px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .boxicon {
@@ -525,10 +554,6 @@ p {
           animation-name: rota;
   -webkit-animation-duration: .4s;
           animation-duration: .4s;
-}
-
-.oui {
-  text-overflow: ellipsis;
 }
 
 .fa-heart {
@@ -681,20 +706,36 @@ p {
 }
 
 @-webkit-keyframes ready_reverse {
-  from {
+  0% {
     width: 18%;
+    opacity: 1;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
     width: 0%;
+    opacity: 0;
   }
 }
 
 @keyframes ready_reverse {
-  from {
+  0% {
     width: 18%;
+    opacity: 1;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
     width: 0%;
+    opacity: 0;
   }
 }
 
@@ -995,8 +1036,8 @@ p {
   border-radius: 50%;
   border: 7px solid transparent;
   border-top-color: #9356DC;
-  -webkit-animation: spin 2 linear infinite;
-          animation: spin 2 linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 .loader::before, .loader::after {

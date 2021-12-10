@@ -48,28 +48,47 @@
     border-radius: 25px ;
     @include margin(30px, 30px, 0 ,30px);
     @include box-shadow($grey);
-    opacity: 0;
     animation-name: appearance;
     animation-duration: 2s;
     animation-fill-mode: both;
     cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    
-
-    .textboxspan{
-        @include margin (0, 20px, 0, 20px);
-        @include padding(10px, 0, 0, 0);
-       
+    &:hover .boxover {
+        width: calc(100%);
     }
-    .textbox{
-        @include margin (0, 20px, 0, 20px);
+    &:hover .textbox{
+        width: 325px;
+        @include margin (0, 0, 0, 20px);
         @include padding(3px, 0, 15px, 0);
-        text-overflow: ellipsis
     }
-}
 
+    
+    
+}
+.boxover{
+    max-width: 500px;
+    text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+    display: inline-block;
+   
+    
+}
+.textboxspan{
+    @include margin (0, 20px, 0, 20px);
+    @include padding(10px, 0, 0, 0);
+    
+}
+.textbox{
+    @include margin (0, 20px, 0, 20px);
+    @include padding(3px, 0, 15px, 0);
+    max-width: 350px;
+    
+}
+.textboxprice{
+    @include margin (0, 20px, 0, 20px);
+    @include padding(0, 0, 20px, 0);   
+}
 
 .btnplacement{
     @extend %flex-center;
@@ -79,9 +98,7 @@
     background-color: $back-white;
     width: 100%;
     border-radius: 25px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    
 }
 .boxicon{
     background-color: $tertiary;
@@ -115,11 +132,7 @@
     }
 }
 
-.oui{
-    text-overflow: ellipsis;
-    
-    
-}
+
 
 
 
