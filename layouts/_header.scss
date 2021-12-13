@@ -1,9 +1,10 @@
 .header{        
-    background: $grey;
+    background:linear-gradient( $mid-grey .1em, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey, $grey );
       
     .header__size{
         @extend %flex-center;   
         height: 70px;
+        ; 
     }    
     .header__logo{
         @extend %flex-center;

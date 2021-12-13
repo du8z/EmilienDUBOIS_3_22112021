@@ -108,7 +108,8 @@ p {
 }
 
 .header {
-  background: #CCC;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1em, #c3c0c0), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), color-stop(#e7e3e3), to(#e7e3e3));
+  background: linear-gradient(#c3c0c0 0.1em, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3, #e7e3e3);
 }
 
 .header .header__size {
@@ -170,8 +171,8 @@ p {
   margin-left: 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
-  -webkit-box-shadow: 0 3px 8px 1px #CCC;
-          box-shadow: 0 3px 8px 1px #CCC;
+  -webkit-box-shadow: 0 3px 8px 1px #e7e3e3;
+          box-shadow: 0 3px 8px 1px #e7e3e3;
   cursor: pointer;
 }
 
@@ -233,8 +234,8 @@ p {
   margin-right: 20px;
   margin-bottom: 0;
   margin-left: 20px;
-  -webkit-box-shadow: 0 3px 8px 1px #CCC;
-          box-shadow: 0 3px 8px 1px #CCC;
+  -webkit-box-shadow: 0 3px 8px 1px #e7e3e3;
+          box-shadow: 0 3px 8px 1px #e7e3e3;
 }
 
 .sectionfunctioning .btnfunctioning:hover {
@@ -301,8 +302,8 @@ p {
   height: 375px;
   background-color: white;
   border-radius: 25px;
-  -webkit-box-shadow: 0 3px 8px 1px #CCC;
-          box-shadow: 0 3px 8px 1px #CCC;
+  -webkit-box-shadow: 0 3px 8px 1px #e7e3e3;
+          box-shadow: 0 3px 8px 1px #e7e3e3;
 }
 
 .articlesectionrestaurants .margintextarticlerestaurant {
@@ -436,8 +437,8 @@ p {
   margin-right: 30px;
   margin-bottom: 0;
   margin-left: 30px;
-  -webkit-box-shadow: 0 3px 8px 1px #CCC;
-          box-shadow: 0 3px 8px 1px #CCC;
+  -webkit-box-shadow: 0 3px 8px 1px #e7e3e3;
+          box-shadow: 0 3px 8px 1px #e7e3e3;
   -webkit-animation-name: appearance;
           animation-name: appearance;
   -webkit-animation-duration: 2s;
@@ -971,6 +972,40 @@ p {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .boxsectionrestaurants {
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    -webkit-box-shadow: 0 3px 8px 1px #e7e3e3;
+            box-shadow: 0 3px 8px 1px #e7e3e3;
+    -webkit-animation-name: appearance;
+            animation-name: appearance;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    cursor: pointer;
+  }
+  .boxsectionrestaurants:hover .boxover {
+    width: auto;
+  }
+  .boxsectionrestaurants:hover .textbox {
+    width: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 0;
+  }
+}
+
 @media screen and (min-width: 1050px) {
   .deletedifferenceheight {
     margin-top: -3px;
@@ -1001,6 +1036,20 @@ p {
     padding-top: 20px;
     padding-right: 0;
     padding-bottom: 0;
+    padding-left: 0;
+  }
+  .boxsectionrestaurants:hover .boxover {
+    width: calc(120%);
+  }
+  .boxsectionrestaurants:hover .textbox {
+    width: 500px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 15px;
     padding-left: 0;
   }
   .boxclassic {

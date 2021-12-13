@@ -1,3 +1,30 @@
+@media screen and (min-width:800px){
+    .boxsectionrestaurants{
+        width: 90%;
+        border-radius: 25px ;
+        @include margin(30px, 30px, 0 ,30px);
+        @include box-shadow($grey);
+        animation-name: appearance;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        cursor: pointer;
+        &:hover .boxover {
+            width: auto;
+        }
+        &:hover .textbox{
+            width: auto;
+            @include margin (0, 0, 0, 20px);
+            @include padding(3px, 0, 15px, 0);
+        }
+    
+        
+        
+    }
+}
+
+
+
+
 @media screen and (min-width:1050px){
     .deletedifferenceheight{
         @include margin (-3px, 0, 0, 0);
@@ -17,6 +44,14 @@
         height: 125px;
         .textboxspan{
             @include padding(20px, 0, 0, 0);
+        }
+        &:hover .boxover {
+            width: calc(120%);
+        }
+        &:hover .textbox{
+            width: 500px;
+            @include margin (0, 0, 0, 20px);
+            @include padding(3px, 0, 15px, 0);
         }
     }
     
