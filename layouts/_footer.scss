@@ -23,7 +23,13 @@
     position: absolute;
     background-color: $back-black;
     color: $txt-font-sombre;
-        .titlefooter{
-            @include margin(30px, 0, 30px, 30px)
-        }
+        
+}
+.titlefooter{
+    @include margin(15px, 0, 15px, 30px);
+    
+}
+.font{
+    font-family: Shrikhand;
+    font-size: 1.5em;
 }
