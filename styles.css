@@ -790,17 +790,17 @@ p {
 }
 
 @media screen and (min-width: 1050px) {
-  .header {
-    background-color: white;
-  }
   .header .header__logo {
     width: auto;
+    background-color: #e7e3e3;
   }
   .header .header__size {
     margin-top: 20px;
     margin-right: 40px;
     margin-bottom: 20px;
     margin-left: 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e7e3e3), to(#e7e3e3));
+    background: linear-gradient(#e7e3e3, #e7e3e3);
   }
   .headerdisplay {
     display: -webkit-box;

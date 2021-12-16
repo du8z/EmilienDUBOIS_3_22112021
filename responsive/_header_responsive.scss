@@ -1,11 +1,14 @@
 @media screen and (min-width:1050px){
     .header{
-        background-color: $back-white;
+        
         .header__logo{
             width: auto;
+            background-color: $grey;
         }
         .header__size{
             @include margin(20px, 40px, 20px, 40px);
+            background:linear-gradient($grey, $grey);
+           
         }
         
     }
